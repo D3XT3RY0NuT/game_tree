@@ -72,5 +72,6 @@ void rezolvare_cerinta1(char *fisier_intrare, char *fisier_iesire){
         return;
     }
     afisare_arbore_joc(f_out, radacina, 0);
+    stergere_arbore(radacina);
     fclose(f_out);
 }

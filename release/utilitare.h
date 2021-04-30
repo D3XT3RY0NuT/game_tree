@@ -5,5 +5,6 @@
 Nod *creare_nod(Nod *tata);
 //Determina daca pe tabla se afla un grup de X sau de O castigator
 void verificare_tabla(Nod *);
+void stergere_arbore(Nod *);
 
 #endif // __UTILITARE__
