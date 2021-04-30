@@ -4,7 +4,7 @@
 
 typedef struct Nod{
     char tabla[3][3];
-    int nr_fii, statut_tabla;
+    int nr_fii, statut_tabla, adevar;
     struct Nod *fii[NR_MAX_FII], *tata;
 }Nod;
 

@@ -1,5 +1,6 @@
 #ifndef __UTILITARE__
 #define __UTILITARE__
+#include "structuri.h"
 
 //Creaza un nod ce contine o tabla identica cu a tatalui sau
 Nod *creare_nod(Nod *tata);

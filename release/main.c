@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "utilitare.h"
+#include "cerinta1.h"
 
 int main(int argc, char *argv[])
 {
@@ -8,7 +10,7 @@ int main(int argc, char *argv[])
         rezolvare_cerinta1(argv[2], argv[3]);
     }
     else if (!strcmp("-c2", argv[1])){
-        //Rezolva cerinta 2
+        rezolvare_cerinta2(argv[2], argv[3]);
     }
     else if (!strcmp("-c3", argv[1])){
         //Rezolva cerinta 3

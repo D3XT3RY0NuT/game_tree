@@ -74,3 +74,62 @@ void rezolvare_cerinta1(char *fisier_intrare, char *fisier_iesire){
     afisare_arbore_joc(f_out, radacina, 0);
     fclose(f_out);
 }
+
+void generare_arbore_SI_SAU(Nod *radacina, char jucator, int nivel){
+    for (int i = 0; i < radacina->nr_fii; i++)
+        generare_arbore_SI_SAU(radacina->fii[i], jucator, nivel + 1);
+    if (radacina->nr_fii){
+        if (nivel % 2){
+            int aux = radacina->fii[0]->adevar;
+            for (int i = 1; i < radacina->nr_fii; i++)
+                aux = aux && radacina->fii[i]->adevar;
+            radacina->adevar = aux;
+        }
+        else{
+            int aux = radacina->fii[0]->adevar;
+            for (int i = 1; i < radacina->nr_fii; i++)
+                aux = aux || radacina->fii[i]->adevar;
+            radacina->adevar = aux;
+        }
+    }
+    else{
+        if (jucator == 'X' && radacina->statut_tabla == 1)
+            radacina->adevar = 1;
+        else if (jucator == 'O' && radacina->statut_tabla == -1)
+            radacina->adevar = 1;
+        else
+            radacina->adevar = 0;
+    }
+}
+
+void afisare_arbore_SI_SAU(FILE *f_out, Nod *radacina, int nivel){
+    for (int i = 0; i < nivel; i++)
+        fprintf(f_out, "\t");
+    if (radacina->adevar == 1)
+        fprintf(f_out, "T\n");
+    else
+        fprintf(f_out, "F\n");
+    for (int i = 0; i < radacina->nr_fii; i++)
+        afisare_arbore_SI_SAU(f_out, radacina->fii[i], nivel + 1);
+}
+
+void rezolvare_cerinta2(char *fisier_intrare, char *fisier_iesire){
+    Nod *radacina = (Nod *) malloc(sizeof(Nod));
+    radacina->tata = NULL;
+    radacina->nr_fii = 0;
+    radacina->statut_tabla = 0;
+    char jucator;
+    citire(fisier_intrare, &jucator, radacina);
+    verificare_tabla(radacina);
+    generare_arbore_joc(radacina, jucator);
+    generare_arbore_SI_SAU(radacina, jucator, 0);
+
+    FILE *f_out = fopen(fisier_iesire, "w");
+    if (!f_out){
+        printf("Eroare la crearea fisierului de iesire.\n");
+        return;
+    }
+    afisare_arbore_SI_SAU(f_out, radacina, 0);
+    stergere_arbore(radacina);
+    fclose(f_out);
+}
