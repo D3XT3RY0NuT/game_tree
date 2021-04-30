@@ -76,3 +76,9 @@ void verificare_tabla(Nod *nod){
         }
     }
 }
+
+void stergere_arbore(Nod *radacina){
+    for (int i = 0; i < radacina->nr_fii; i++)
+        stergere_arbore(radacina->fii[i]);
+    free(radacina);
+}
