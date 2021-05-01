@@ -45,5 +45,5 @@ Pentru vizualizarea rezultatelor, este suficient să se deschidă fișierul de i
 ### Probleme
 ***
 Versiunea curentă (ver 1.0) nu conține probleme cunoscute. Programul a fost testat pe Windows 10, 64 de biți și pe distribuția de Linux Ubuntu 20.04. Dacă observați orice comportament neașteptat, vă rog să-l semnalați prin intermediul acestui la acest depozit https://github.com/D3XT3RY0NuT/game_tree.
-
+***
 Notă: Depozitul GitHub a fost publicat la data de 7 mai 2021.
