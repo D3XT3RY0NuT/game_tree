@@ -1,4 +1,4 @@
-# Algoritmul MinMax pentr jocul de X și 0.
+# Algoritmul MinMax pentru jocul de X și 0.
 ***
 ## Cuprins
 1. [Informații generale](#informații-generale)
