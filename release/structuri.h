@@ -14,7 +14,7 @@ typedef struct Nod{
 
 typedef struct ElemCoada{
     Nod *nod;
-    struct Coada *urm, *prec;
+    struct ElemCoada *urm, *prec;
 }ElemCoada;
 
 typedef struct Coada{
