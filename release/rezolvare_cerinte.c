@@ -150,7 +150,6 @@ void citire_nod(FILE *f_in, Nod *nod, Coada *coada){
     }
     s[l++] = '\0';
     int x = convertire_sir_numar(s, l);
-    printf("%s %d\n", s, x);
     if (s[0] == '('){
         nod->nr_fii = x;
         for (int i = 0; i < nod->nr_fii; i++){
@@ -203,6 +202,7 @@ void rezolvare_cerinta3(char *fisier_intrare, char *fisier_iesire){
         aux = extragere_coada(coada);
         citire_nod(f_in, aux, coada);
     }
+    free(coada);
     fclose(f_in);
 
     generare_arbore_min_max(radacina, 0);

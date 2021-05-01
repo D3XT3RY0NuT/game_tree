@@ -132,6 +132,8 @@ Nod *extragere_coada(Coada *coada){
             coada->sfarsit = NULL;
         return aux;
     }
+
+    return NULL;
 }
 
 //Determina minimul dintre doua numere intregi
