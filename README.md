@@ -4,7 +4,7 @@
 1. [Informații generale](#informații-generale)
 2. [Conținutul proiectului](#conținutul-proiectului)
 3. [Tehnologii folosite](#tehnologii-folosite)
-4. [Instalare](#instalare)
+4. [Instalare și utilizare](#instalare-și-utilizare)
 5. [Probleme](#probleme)
 
 ### Informații generale
@@ -16,7 +16,7 @@
 
 ### Conținutul proiectului
 ***
-Acest proiect conține 6 fișiere sursă, un Makefile, licența de distribuire și fișierul curent de README.
+Acest proiect conține 6 fișiere sursă, un Makefile, licența de distribuire și fișierul curent README.
 Fișierele sursă sunt următoarele:
 1. **main.c**: fișierul ce decide ce sarcină va fi rezolvată în funcție de primul parametru dat.
 2. **rezolvare_cerinte.c**: conține 3 funcții principale, pentru fiecare sarcină în parte, cât și 
@@ -24,14 +24,14 @@ alte funcții secundare ce conduc la o rezolvare corectă și completă a necesi
 3. **rezolvare_cerinte.h**: în interiorul acestui fișier se află definițiile tuturor funcțiilor din **rezolvare_cerințe.c** care sunt apelate de alte module.
 4. **utilitare.c**: un set de funcții cu utilitate ridicată și folosite de-a lungul proiectului
 5. **utilitare.h**: definițiile funcțiilor din **utilitare.c**
-6. **structuri.h**: fișier header ce definește cele două structuri utilizate în proiect: arbori și cozi.
+6. **structuri.h**: fișier antet ce definește cele două structuri utilizate în proiect: arbori și cozi.
 
 ### Tehnologii folosite
 ***
-Mediu integrat de dezvoltare: CodeBlocks, ver 20.03.
-Compilator: gcc, ver 9.3.0.
-Limbaj de programare: C.
-Sistem de versionare: git, ver 2.25.1, împreună cu serviciul web de stocare GitHub
+Mediu integrat de dezvoltare: [CodeBlocks](https://www.codeblocks.org/), ver 20.03.    
+Compilator: [gcc](https://gcc.gnu.org/), ver 9.3.0.    
+Limbaj de programare: C.    
+Sistem de versionare: [git](https://git-scm.com/), ver 2.25.1, împreună cu serviciul web de stocare [GitHub](https://github.com/)
 
 ### Instalare și utilizare
 ***
@@ -44,6 +44,6 @@ Pentru vizualizarea rezultatelor, este suficient să se deschidă fișierul de i
 
 ### Probleme
 ***
-Versiunea curentă (ver 1.0) nu conține probleme cunoscute. Programul a fost testat pe Windows 10, 64 de biți și pe distribuția de Linux Ubuntu 20.04. Dacă observați orice comportament neașteptat, vă rog să-l semnalați prin intermediul acestui la acest depozit https://github.com/D3XT3RY0NuT/game_tree.
+Versiunea curentă (ver 1.0) nu conține probleme cunoscute. Programul a fost testat pe Windows 10, 64 de biți și pe distribuția de Linux Ubuntu 20.04. Dacă observați orice comportament neașteptat, vă rog să-l semnalați prin intermediul acestui depozit https://github.com/D3XT3RY0NuT/game_tree.
 ***
 Notă: Depozitul GitHub a fost publicat la data de 7 mai 2021.
