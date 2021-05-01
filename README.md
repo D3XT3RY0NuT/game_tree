@@ -35,8 +35,8 @@ Sistem de versionare: [git](https://git-scm.com/), ver 2.25.1, împreună cu ser
 
 ### Instalare și utilizare
 ***
-Pentru instalare, se descarcă dosarul **release**, iar din interiorul acestuia se rulează comanda **make** specifică fișierului **Makefile**. Se va genera un fișier binar cu denumirea de **minmax**.
-Pentru utilizare, se rulează executabilul **minmax** cu următoarele argumente:
+Pentru instalare, se descarcă dosarul **release**, iar din interiorul acestuia se rulează comanda **make** specifică fișierului **Makefile**. Se va genera un fișier binar cu denumirea de **minimax**.    
+Pentru utilizare, se rulează executabilul **minimax** cu următoarele argumente:
 1. Primul argument va fi **-c1**, **-c2** sau **-c3** în funcție de cerința de rezolvare dorită.
 2. Al doilea argument reprezintă numele fișierului din care se vor citi datele.
 3. Al treilea argument reprezintă numele fișierului în care se vor stoca rezultatele.
